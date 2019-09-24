@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+bindir=${exec_prefix}/bin
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libstemmer
+Description: Indonesian Language Stemmer
+version: 0.1
+Cflags: -I${includedir}
+Libs: -L${libdir} -lstemmer

@@ -1,0 +1,45 @@
+libstemmer - stemmer for indonesian language
+
+Table of Contents
+-----------------
+
+- Installation
+- Build and run 'test' binary
+- Build and run 'parameterized-test' binary
+
+Installation
+------------
+
+- Install google test framework.
+
+sudo apt-get install libgtest-dev
+sudo apt-get install cmake
+cd /usr/src/gtest
+sudo cmake CMakeLists.txt
+sudo make
+sudo cp *.a /usr/lib
+
+- Install the library
+
+aclocal
+autoconf
+automake --add-missing --foreign
+./configure (default prefix = /usr/local/lib)
+make
+sudo make install
+
+Build and run 'test' binary
+---------------------------
+
+cd test
+make
+./test-main
+
+Build and run 'parameterized-test' binary
+-----------------------------------------
+
+cd parameterized-test
+make
+./test-functional-main
+
+TODO: create valgrind test
