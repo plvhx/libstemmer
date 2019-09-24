@@ -1,0 +1,11 @@
+m4
+autom4te.cache
+autom4te.cache/output.*
+autom4te.cache/requests
+src/code/.deps
+src/code/context/.deps
+src/code/context/visitor/.deps
+src/code/disambiguator/.deps
+test/.deps
+test/disambiguator/.deps
+parameterized-test/.deps
